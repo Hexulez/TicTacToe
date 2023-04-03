@@ -26,7 +26,7 @@ namespace Tic_Tac_Toe
                     //clone orginal gameboard
                     char[] nextboard = (char[])board.Clone();
                     //check is it AI or player turn now
-                    nextboard[i] = isMax ? '0' : 'X';
+                    nextboard[i] = isMax ? 'O' : 'X';
 
                     //check winning
                     int winning = CheckWinning.Winning(nextboard);
